@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-          <button class="slideshow-nav-button prev" style="z-index:20;position:absolute;" onclick="window.location.href='bisola.html'">‹</button>
+          <button class="slideshow-nav-button prev" style="z-index:20;position:absolute;" onclick="window.location.href='tosin.html'">‹</button>
           <button class="slideshow-nav-button next" style="z-index:20;position:absolute;" onclick="triggerReveal()">›</button>
           <div class="reveal-overlay" id="reveal-overlay">
             <div class="reveal-inner" id="reveal-inner">
@@ -57,7 +57,7 @@
 
     <script>
       function goToScreen(screenId) {
-        const map = {'screen-0':'index.html','screen-prologue':'prologue.html','screen-2021':'2021.html','screen-2022':'2022.html','screen-2023':'2023.html','screen-2024':'2024.html','screen-2025':'2025.html','screen-who':'who.html','screen-slideshow':'slideshow.html','screen-fame':'fame.html','screen-tommy':'tommy.html','screen-bisola':'bisola.html','screen-messages':'sammy.html','screen-letter':'letter.html','screen-end':'end.html'};
+        const map = {'screen-0':'index.html','screen-prologue':'prologue.html','screen-who':'who.html','screen-slideshow':'slideshow.html','screen-fame':'fame.html','screen-tommy':'tommy.html','screen-bisola':'bisola.html','screen-messages':'sammy.html','screen-letter':'letter.html','screen-end':'end.html'};
         if (map[screenId]) window.location.href = map[screenId];
       }
       const audio = document.getElementById('bgMusic');
