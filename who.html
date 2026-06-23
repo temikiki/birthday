@@ -100,7 +100,7 @@
             
             <br /><br/>
             You
-            love hard fufu and afang soup.  You love pink 🌸. You do not like turkey
+            love hard fufu and afang soup. You do not like turkey
           (you believe they are cultists). Your smile is — I'll just say —
             <strong>therapy to my entire existence.</strong>
           </p>
@@ -422,27 +422,22 @@
       // ============================
       // Map each message screen to its video ID and reveal name
       const msgScreens = {
-        "screen-fame": { vid: "fameVideo", reveal: "fame" },
-        "screen-tommy": { vid: "tommyVideo", reveal: "tommy" },
-        "screen-bisola": { vid: "bisolaVideo", reveal: "bisola" },
-        "screen-messages": { vid: "sammyVideo", reveal: "sammy" },
+        "screen-bj": { vid: "bjVideo", reveal: "bj" },
+        "screen-memu": { vid: "memuVideo", reveal: "memu" },
+        "screen-tosin": { vid: "tosinVideo", reveal: "tosin" },
+        "screen-messages": { vid: "temiVideo", reveal: "temi" },
       };
 
       function goToScreen(screenId) {
         switch(screenId) {
         case 'screen-0': window.location.href = 'index.html'; return;
         case 'screen-prologue': window.location.href = 'prologue.html'; return;
-        case 'screen-2021': window.location.href = '2021.html'; return;
-        case 'screen-2022': window.location.href = '2022.html'; return;
-        case 'screen-2023': window.location.href = '2023.html'; return;
-        case 'screen-2024': window.location.href = '2024.html'; return;
-        case 'screen-2025': window.location.href = '2025.html'; return;
         case 'screen-who': window.location.href = 'who.html'; return;
         case 'screen-slideshow': window.location.href = 'slideshow.html'; return;
-        case 'screen-fame': window.location.href = 'fame.html'; return;
-        case 'screen-tommy': window.location.href = 'tommy.html'; return;
-        case 'screen-bisola': window.location.href = 'bisola.html'; return;
-        case 'screen-messages': window.location.href = 'sammy.html'; return;
+        case 'screen-bj': window.location.href = 'bj.html'; return;
+        case 'screen-memu': window.location.href = 'memu.html'; return;
+        case 'screen-tosin': window.location.href = 'tosin.html'; return;
+        case 'screen-messages': window.location.href = 'temi.html'; return;
         case 'screen-letter': window.location.href = 'letter.html'; return;
         case 'screen-end': window.location.href = 'end.html'; return;
         }
@@ -684,10 +679,10 @@
       // ============================
       // When a message video can play, hide its spinner
       const spinnerMap = {
-        fameVideo: "fame-spinner",
-        tommyVideo: "tommy-spinner",
-        bisolaVideo: "bisola-spinner",
-        sammyVideo: "sammy-spinner",
+        bjVideo: "bj-spinner",
+        memuVideo: "memu-spinner",
+        tosinVideo: "tosin-spinner",
+        temiVideo: "temi-spinner",
       };
       Object.entries(spinnerMap).forEach(([vidId, spinnerId]) => {
         const v = document.getElementById(vidId);
