@@ -37,7 +37,7 @@
         </button>
 
         <div class="slide active-slide">
-          <div class="slide-media"><img src="./Tun/tun5.jpg" alt="" /></div>
+          <div class="slide-media"><img src="./Tun/tun5.jpg" alt="" style="width:100%;height:100%;object-fit:contain;display:block;" /></div>
           <div class="slide-overlay"></div>
           <div class="slide-caption">
             <div class="slide-caption-text">
@@ -196,7 +196,7 @@
             <div class="slide-caption-text">
               more from my sleeping beauty😂
             </div>
-            <div class="slide-caption-year">25/26</div>
+            <div class="slide-caption-year"></div>
           </div>
         </div>
         <div class="slide">
@@ -237,7 +237,7 @@
         </div>
        
         <!-- LAST SLIDE → FAME -->
-        <div class="slide" data-next="bj.html">
+      
           <!-- <div class="slide-media">
             <div class="yt-cover" style="position:absolute;inset:0;width:100%;height:100%;overflow:hidden;"><div class="yt-slide" id="yt-20" data-video-id=""></div></div>
           </div> -->
@@ -247,15 +247,9 @@
               Now… some people have something to say. 🎀
             </div>
             <div class="slide-caption-year">With all my love</div> -->
-            <div class="reveal-btn-row">
-                <button class="reveal-next-btn" onclick="window.location.href='bj.html'"
-                  style="background:linear-gradient(135deg,#1976d2,#1565c0);box-shadow:0 0 60px rgba(0,0,0,0.4);">
-                  Now… some people have something to say. 🎀
-                </button>
-         </div>
+            
           <!-- </div> -->
-        </div>
-         
+        
 
         <button class="slideshow-nav-button prev" style="z-index:20;position:absolute;" onclick="goToPrevSlide()">
           ‹
@@ -263,6 +257,14 @@
         <button class="slideshow-nav-button next" style="z-index:20;position:absolute;" onclick="goToNextSlide()">
           ›
         </button>
+          <div class="slide" data-next="bj.html">
+        <div class="reveal-btn-row">
+                <button class="reveal-next-btn" onclick="window.location.href='bj.html'"
+                  style="background:linear-gradient(135deg,#1976d2,#1565c0);box-shadow:0 0 60px rgba(0,0,0,0.4);">
+                  Now… some people have something to say. 🎀
+                </button>
+          </div>
+         </div>
         <div class="slide-progress" id="slideProgress"></div>
       </div>
     </div>
@@ -367,6 +369,14 @@
         btn.style.display = hasVideo ? 'flex' : 'none';
         btn.style.opacity = (hasVideo && slidePlaying) ? '0' : '1';
         btn.textContent = '▶';
+
+         // ── hide prev/next on the reveal slide ──────────────  ← ADD
+        const prevBtn = document.querySelector('.slideshow-nav-button.prev');
+        const nextBtn = document.querySelector('.slideshow-nav-button.next');
+        const onRevealSlide = currentSlide === SLIDE_VIDEOS.length - 1;
+        if (prevBtn) prevBtn.style.display = onRevealSlide ? 'none' : 'flex';
+        if (nextBtn) nextBtn.style.display = onRevealSlide ? 'none' : 'flex';
+        // ─────────
       }
 
       function toggleSlidePlay() {
