@@ -366,27 +366,22 @@
       // ============================
       // Map each message screen to its video ID and reveal name
       const msgScreens = {
-        "screen-fame": { vid: "fameVideo", reveal: "fame" },
-        "screen-tommy": { vid: "tommyVideo", reveal: "tommy" },
-        "screen-bisola": { vid: "bisolaVideo", reveal: "bisola" },
-        "screen-messages": { vid: "sammyVideo", reveal: "sammy" },
+        "screen-fame": { vid: "bjVideo", reveal: "Bj" },
+        "screen-tommy": { vid: "memuVideo", reveal: "Memunat" },
+        "screen-bisola": { vid: "tosinVideo", reveal: "Tosin" },
+        "screen-messages": { vid: "temiVideo", reveal: "Temitayo" },
       };
 
       function goToScreen(screenId) {
         switch(screenId) {
         case 'screen-0': window.location.href = 'index.html'; return;
         case 'screen-prologue': window.location.href = 'prologue.html'; return;
-        case 'screen-2021': window.location.href = '2021.html'; return;
-        case 'screen-2022': window.location.href = '2022.html'; return;
-        case 'screen-2023': window.location.href = '2023.html'; return;
-        case 'screen-2024': window.location.href = '2024.html'; return;
-        case 'screen-2025': window.location.href = '2025.html'; return;
         case 'screen-who': window.location.href = 'who.html'; return;
         case 'screen-slideshow': window.location.href = 'slideshow.html'; return;
-        case 'screen-fame': window.location.href = 'fame.html'; return;
-        case 'screen-tommy': window.location.href = 'tommy.html'; return;
-        case 'screen-bisola': window.location.href = 'bisola.html'; return;
-        case 'screen-messages': window.location.href = 'sammy.html'; return;
+        case 'screen-bj': window.location.href = 'bj.html'; return;
+        case 'screen-memu': window.location.href = 'memu.html'; return;
+        case 'screen-tosin': window.location.href = 'tosin.html'; return;
+        case 'screen-messages': window.location.href = 'temi.html'; return;
         case 'screen-letter': window.location.href = 'letter.html'; return;
         case 'screen-end': window.location.href = 'end.html'; return;
         }

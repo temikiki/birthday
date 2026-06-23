@@ -57,7 +57,16 @@
 
     <script>
       function goToScreen(screenId) {
-        const map = {'screen-0':'index.html','screen-prologue':'prologue.html','screen-who':'who.html','screen-slideshow':'slideshow.html','screen-bj':'bj.html','screen-memu':'memu.html','screen-tosin':'tosin.html','screen-messages':'temi.html','screen-letter':'letter.html','screen-end':'end.html'};
+        const map = {'screen-0':'index.html',
+        'screen-prologue':'prologue.html',
+        'screen-who':'who.html',
+        'screen-slideshow':'slideshow.html',
+        'screen-bj':'bj.html',
+        'screen-memu':'memu.html',
+        'screen-tosin':'tosin.html',
+        'screen-messages':'temi.html',
+        'screen-letter':'letter.html',
+        'screen-end':'end.html'};
         if (map[screenId]) window.location.href = map[screenId];
       }
       const audio = document.getElementById('bgMusic');
