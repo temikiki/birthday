@@ -185,11 +185,6 @@
       const screenOrder = [
         "screen-0",
         "screen-prologue",
-        "screen-2021",
-        "screen-2022",
-        "screen-2023",
-        "screen-2024",
-        "screen-2025",
         "screen-who",
         "screen-slideshow",
         "screen-bj",
@@ -366,9 +361,9 @@
       // ============================
       // Map each message screen to its video ID and reveal name
       const msgScreens = {
-        "screen-fame": { vid: "bjVideo", reveal: "Bj" },
-        "screen-tommy": { vid: "memuVideo", reveal: "Memunat" },
-        "screen-bisola": { vid: "tosinVideo", reveal: "Tosin" },
+        "screen-bj": { vid: "bjVideo", reveal: "Bj" },
+        "screen-memu": { vid: "memuVideo", reveal: "Memunat" },
+        "screen-tosin": { vid: "tosinVideo", reveal: "Tosin" },
         "screen-messages": { vid: "temiVideo", reveal: "Temitayo" },
       };
 
@@ -453,7 +448,7 @@
         const dots = document.querySelectorAll("#slideProgress .slide-dot");
         if (index < 0) return;
         if (index >= slides.length) {
-          window.location.href='fame.html';
+          window.location.href='bj.html';
           return;
         }
 
@@ -623,10 +618,10 @@
       // ============================
       // When a message video can play, hide its spinner
       const spinnerMap = {
-        fameVideo: "fame-spinner",
-        tommyVideo: "tommy-spinner",
-        bisolaVideo: "bisola-spinner",
-        sammyVideo: "sammy-spinner",
+        bjVideo: "bj-spinner",
+        memuVideo: "memu-spinner",
+        tosinVideo: "tosin-spinner",
+        temiVideo: "temi-spinner",
       };
       Object.entries(spinnerMap).forEach(([vidId, spinnerId]) => {
         const v = document.getElementById(vidId);
