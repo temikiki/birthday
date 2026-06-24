@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday, Yinka 🎀</title>
+    <title>Happy Birthday, Oluwatunmise 🎀</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -156,11 +156,11 @@
                 try { e.target.unMute(); e.target.setVolume(100); } catch(ex) {}
                 if (audio && !audio.paused) { audio.pause(); musicPlaying = false; }
                 _playing = true;                                                   // ← ADD
-                 { const b = document.getElementById('btn_fameVideo'); if (b) b.style.opacity = '0'; }  // ← ADD
+                 { const b = document.getElementById('btn_bjVideo'); if (b) b.style.opacity = '0'; }  // ← ADD
               }
                 if (e.data === YT.PlayerState.PAUSED) {                              // ← ADD whole block
                   _playing = false;
-                    const b = document.getElementById('btn_fameVideo'); if (b) b.style.opacity = '1';
+                    const b = document.getElementById('btn_bjVideo'); if (b) b.style.opacity = '1';
                    }
               if (e.data === YT.PlayerState.ENDED) {
                 triggerReveal();
