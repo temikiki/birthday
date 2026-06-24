@@ -429,6 +429,7 @@
         "screen-favour": { vid: "favourVideo", reveal: "favour" },
         "screen-memu": { vid: "memuVideo", reveal: "memu" },
         "screen-tosin": { vid: "tosinVideo", reveal: "tosin" },
+        "screen-faith": { vid: "faithVideo", reveal: "faith" },
         "screen-messages": { vid: "temiVideo", reveal: "temi" },
       };
 
@@ -443,6 +444,7 @@
         case 'screen-favour': window.location.href = 'favour.html'; return;
         case 'screen-memu': window.location.href = 'memu.html'; return;
         case 'screen-tosin': window.location.href = 'tosin.html'; return;
+        case 'screen-faith': window.location.href = 'faith.html'; return;
         case 'screen-messages': window.location.href = 'temi.html'; return;
         case 'screen-letter': window.location.href = 'letter.html'; return;
         case 'screen-end': window.location.href = 'end.html'; return;
@@ -515,7 +517,7 @@
         const dots = document.querySelectorAll("#slideProgress .slide-dot");
         if (index < 0) return;
         if (index >= slides.length) {
-          window.location.href='fame.html';
+          window.location.href='bj.html';
           return;
         }
 
@@ -686,8 +688,11 @@
       // When a message video can play, hide its spinner
       const spinnerMap = {
         bjVideo: "bj-spinner",
+        rachaelVideo: "rachael-spinner",
+        favourVideo: "favour-spinner",
         memuVideo: "memu-spinner",
         tosinVideo: "tosin-spinner",
+        faithVideo: "faith-spinner",
         temiVideo: "temi-spinner",
       };
       Object.entries(spinnerMap).forEach(([vidId, spinnerId]) => {
